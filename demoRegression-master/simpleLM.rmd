@@ -46,3 +46,12 @@ summary.lm(mychest)
 The mychest model is using chest instead of neck as used in the simp model, using chest adjusted the r squared and is 0.786 and the residual standard error is 4.939. In the simp model the r squared was 0.747 and the residual standard error was 5.376.The my chest is a better model because it explains the error and the residual error is smaller than in the simp model.
 
 
+```{r}
+myheadw <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(myheadw)
+summary.lm(myheadw)
+```
+
+In the myheadw model the aadjusted r-squared has gone downa and the residual standard error has gone up.
+
